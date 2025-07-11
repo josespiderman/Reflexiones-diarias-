@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reflexiones Diarias</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>✨ Reflexiones Diarias</h1>
+    <p>Una imagen, una reflexión, un momento para pensar.</p>
+
+    <form id="reflection-form">
+      <input type="text" id="title" placeholder="Título" required>
+      <textarea id="description" placeholder="Escribe tu reflexión..." required></textarea>
+      <input type="file" id="image" accept="image/*" required>
+      <button type="submit">Guardar Reflexión</button>
+    </form>
+
+    <div id="daily-reflection">
+      <h2 id="saved-title">Tu reflexión aparecerá aquí</h2>
+      <img id="saved-image" src="" alt="">
+      <p id="saved-description"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
